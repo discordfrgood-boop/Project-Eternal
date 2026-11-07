@@ -29,6 +29,15 @@ local CATALOG = {
 		Listed = true,
 		Tone = Color3.fromRGB(217, 164, 65),
 	},
+	{
+		Key = "tsb",
+		Name = "The Strongest Battlegrounds",
+		Places = { 10449761463 },
+		Universe = 3808081382,
+		Loader = "https://api.xhider.xyz/files/v4/loaders/9404b72ec38c43ed161055d4e7d7a60d.lua",
+		Listed = true,
+		Tone = Color3.fromRGB(226, 96, 96),
+	},
 }
 
 local TOGGLE_KEY = Enum.KeyCode.LeftControl
@@ -489,7 +498,9 @@ for _, entry in ipairs(CATALOG) do
 		}, card)
 		round(icon, 10)
 
-		label(card, entry.Name, 13, Enum.Font.GothamBold, C.Text, UDim2.fromOffset(60, 12), UDim2.new(1, -70, 0, 20))
+		local nameLabel = label(card, entry.Name, 13, Enum.Font.GothamBold, C.Text, UDim2.fromOffset(60, 12), UDim2.new(1, -70, 0, 20))
+		nameLabel.TextScaled = true
+		mk("UITextSizeConstraint", { MaxTextSize = 13, MinTextSize = 8 }, nameLabel)
 
 		local dot = mk("Frame", {
 			Size = UDim2.fromOffset(6, 6),
