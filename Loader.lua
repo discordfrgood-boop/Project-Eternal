@@ -25,7 +25,7 @@ local CATALOG = {
 		Name = "The Strongest Battlegrounds",
 		Places = { 10449761463 },
 		Universe = 3808081382,
-		Loader = "https://raw.githubusercontent.com/discordfrgood-boop/Project-Eternal/refs/heads/main/GenosFarm.lua",
+		Loader = "https://raw.githubusercontent.com/discordfrgood-boop/Project-Eternal/refs/heads/main/SaitamaFarm.lua",
 		Listed = true,
 		Tone = Color3.fromRGB(226, 96, 96),
 	},
